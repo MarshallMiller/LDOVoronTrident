@@ -8,3 +8,12 @@ Use the screws provided in the BTT touchscreen packaging to fasten the screen to
 - 5 M3x8 
 - 3 M3 roll-in nut
 - 2 M3 heatset insert
+
+### Configuration
+
+Edit /boot/config.txt
+
+- Remove `dtoverlay=vc4-kms-v3d`
+- Add `dtoverlay=vc4-kms-dsi-lt070me05000-v2`
+- To rotate display add `display_rotate=2`
+- To rotate touchscreen add `lcd_rotate=2`
